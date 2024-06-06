@@ -1,15 +1,14 @@
 ---
-title: "My website and data analysis portfolio"
+title: "Edward Cruz,Jr. Data Analysis Portfolio"
 ---
 
-# Hello
+# UTSA MSDA Practicum II
 
-### And hello again
+### Summer course 2024 will be challenging yet fun
 
-Welcome to **my website** and _data analysis portfolio._ 
+Welcome to **my website** and *data analysis portfolio.*
 
+-   Please use the `Menu Bar` above to look around.
+-   Never give up on your dreams, no matter how painful and difficult your journey is !
 
-* Please use the `Menu Bar` above to look around.
-* Have fun!
-
-**Feel free to change this text any way you want 😁!**
+**I am excited and looking forward to being challenged**![](images/clipboard-1905889198.png){width="50"} **, I will probably regret saying that**![](images/clipboard-2427421825.png){width="33" height="27"}**!**

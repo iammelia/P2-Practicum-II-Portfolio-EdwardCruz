@@ -1,7 +1,27 @@
 ---
-title: "About me"
+title: "About me Edward Cruz,Jr."
 ---
 
-Add some text and a figure describing myself.
+Hello fellow students,
 
-For details, see the exercise instructions. 
+My name is Edward Cruz, Jr., and I'm excited to share a bit about myself with you. I am proud to be Native American and hold a BBA in Accounting from Incarnate Word College '88', now known as the University of the Incarnate Word. Additionally, I have earned two master’s degrees: an MBA from Texas A&M University-San Antonio '21' and an MSBA from Texas A&M University-Commerce '22'.
+
+My journey in life has been enriched by my 24 years of service in the United States Marine Corps, where I retired with the rank of Master Sergeant (MSgt) and an Operation Iraqi Freedom (OIF) veteran. After my military career, I transitioned into the supplier diversity market, where I have over seventeen years of experience. During this time, I found great satisfaction in assisting small and diverse businesses in securing contracting opportunities. It was in this role that I discovered my passion for data analysis, as I frequently presented visual outcomes to public board members and stakeholders. This newfound interest has led me here, where I am eager to further enhance my data analysis skills.
+
+"Pics From Back in the Day- Good Times"
+
+![](images/Cruz%20Produce%20stand.jpg){fig-align="center" width="195"}
+
+![](images/internal-shot-inside-the-cargo-bay-of-a-usaf-c-130-hercules-cargo-plane-at-fa8e35-01.jpg){fig-align="center" width="197"}
+
+On a personal note, I have been blessed with a supportive and patient wife, and we have been happily married for over 30 years. We have two wonderful daughters: our eldest recently graduated from Texas A&M University-San Antonio, and our youngest is a second-year student at the University of Texas at San Antonio.
+
+In my free time, I enjoy a variety of hobbies. I am passionate about cooking, farming, and beekeeping—raising and recovering bees and simply watching their lively activities at my hives brings me immense joy. I also love being outdoors, fly fishing, and staying active as a dedicated gym enthusiast.
+
+![Uncapped Honey from My Hives](images/Bee%20Frame%202024.jpg){fig-align="center" width="123"}
+
+I look forward to getting to know all of you and learning together on this exciting journey. Thank you!
+
+![](images/Eddie%20Profile-01.jpg){fig-align="center" width="148"}
+
+My coding background has only been via instructional environments with exposure to SQL, R, and Python.
