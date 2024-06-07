@@ -1,0 +1,157 @@
+---
+title: "Honey Bee Colonies Impacted by Varroa, American Fouldbrood and Global Warming"
+subtitle: ""
+author: Edward Cruz, Jr, Leonel G. Salazar, Amelia Tristan, Mojisola Popoola
+date: "`r Sys.Date()`"
+format:
+  docx:
+    toc: false
+    number-sections: true
+    highlight-style: github
+bibliography: ../../assets/dataanalysis-references.bib
+csl: ../../assets/apa.csl
+---
+
+The structure below is one possible setup for a data analysis project (including the course project). For a manuscript, adjust as needed. You don't need to have exactly these sections, but the content covering those sections should be addressed.
+
+This uses MS Word as output format. [See here](https://quarto.org/docs/output-formats/ms-word.html) for more information. You can switch to other formats, like html or pdf. See [the Quarto documentation](https://quarto.org/) for other formats.
+
+```{r, echo=FALSE, message=FALSE}
+# load a few R packages
+library(here)
+library(knitr)
+```
+
+# Summary/Abstract
+
+Group Ten is pursuing the historical data collected by various public agencies to determine if the impact of Varroa, American Foulbrood, and global warming has demonstrated an increase in hive losses across the United States and Texas. The research will be accomplished using data sets derived from the agencies National Agricultural Statistics Service, Agricultural Statistics Board, and United States Department of Agriculture (USDA). Data sets containing several years of hive losses based on varroa and bacterium losses including recent possible environmental thermal global warming. A visualization of outcomes using R demonstrating and validating possible detrimental effects on honeybee colonies in the United States and Texas wrought by the negative impact of mites, bacterium, and global warming that will affect honey production and inevitably impact food production.
+
+{{< pagebreak >}}
+
+# Introduction
+
+Honeybees have been nature's pollinators for centuries, with documented relationships with humans dating back to ancient Egyptians and Hindus. Historically, humans have maintained beehives, using honey as medicine in cultures such as the Egyptians, Assyrians, Chinese, Greeks, and Romans. The natural antibacterial properties of honey made it a valuable treatment for wounds, preventing infection, a practice used by Romans and Russians during World War I.
+
+Honeybees and other pollinators are critical for food production and nutritional security, yet bees face a variety of survival challenges. Currently, Varroa mites impact bee colonies, and this mite infestation, a tiny red-brown parasite that can live on adult honeybees and reproduce on larvae and pupae in the developing brood. Another major threat is American Foulbrood Disease (AFB), caused by the bacterium Paenibacillus larvae. A disease that is fatal to honeybee larvae and found worldwide. The only effective control measure is to incinerate and destroy infected hives and live bees mitigating the infectious spread to other colonies.
+
+In addition, the exploration of climate change impacting honeybee colony losses has only recently been researched. While there are correlations between higher winter temperatures and greater colony losses, the effects of warmer autumn and winter temperatures on colony population dynamics and age structure as potential causes of reduced colony survival have not yet been fully investigated.
+
+## General Background Information
+
+*Provide enough background on your topic that others can understand the why and how of your analysis*
+
+## Description of data and data source
+
+*Describe what the data is, what it contains, where it is from, etc. Eventually this might be part of a methods section.*
+
+## Questions/Hypotheses to be addressed
+
+*State the research questions you plan to answer with this analysis.*
+
+To cite other work (important everywhere, but likely happens first in introduction), make sure your references are in the bibtex file specified in the YAML header above and have the right bibtex key. Then you can include like this:
+
+Examples of reproducible research projects can for instance be found in [@mckay2020; @mckay2020a].
+
+{{< pagebreak >}}
+
+# Methods
+
+*Describe your methods. That should describe the data, the cleaning processes, and the analysis approaches. You might want to provide a shorter description here and all the details in the supplement.*
+
+## Schematic of workflow
+
+Sometimes you might want to show a schematic diagram/figure that was not created with code (if you can do it with code, do it). @fig-schematic is an example of some - completely random/unrelated - schematic that was generated with Biorender. We store those figures in the `assets` folder.
+
+```{r}
+#| label: fig-schematic
+#| fig-cap: "A figure that is manually generated and shows some overview/schematic. This has nothing to do with the data, it's just a random one from one of our projects I found and placed here."
+#| echo: FALSE
+knitr::include_graphics(here("assets","antigen-recognition.png"))
+```
+
+## Data aquisition
+
+*As applicable, explain where and how you got the data. If you directly import the data from an online source, you can combine this section with the next.*
+
+## Data import and cleaning
+
+*Write code that reads in the file and cleans it so it's ready for analysis. Since this will be fairly long code for most datasets, it might be a good idea to have it in one or several R scripts. If that is the case, explain here briefly what kind of cleaning/processing you do, and provide more details and well documented code somewhere (e.g. as supplement in a paper). All materials, including files that contain code, should be commented well so everyone can follow along.*
+
+## Statistical analysis
+
+*Explain anything related to your statistical analyses.*
+
+{{< pagebreak >}}
+
+# Results
+
+## Exploratory/Descriptive analysis
+
+*Use a combination of text/tables/figures to explore and describe your data. Show the most important descriptive results here. Additional ones should go in the supplement. Even more can be in the R and Quarto files that are part of your project.*
+
+@tbl-summarytable shows a summary of the data.
+
+Note the loading of the data providing a **relative** path using the `../../` notation. (Two dots means a folder up). You never want to specify an **absolute** path like `C:\ahandel\myproject\results\` because if you share this with someone, it won't work for them since they don't have that path. You can also use the `here` R package to create paths. See examples of that below. I generally recommend the `here` package.
+
+```{r}
+#| label: tbl-summarytable
+#| tbl-cap: "Data summary table."
+#| echo: FALSE
+resulttable=readRDS("../../results/tables/summarytable.rds")
+knitr::kable(resulttable)
+```
+
+## Basic statistical analysis
+
+*To get some further insight into your data, if reasonable you could compute simple statistics (e.g. simple models with 1 predictor) to look for associations between your outcome(s) and each individual predictor variable. Though note that unless you pre-specified the outcome and main exposure, any "p\<0.05 means statistical significance" interpretation is not valid.*
+
+@fig-result shows a scatterplot figure produced by one of the R scripts.
+
+```{r}
+#| label: fig-result
+#| fig-cap: "Height and weight stratified by gender."
+#| echo: FALSE
+knitr::include_graphics(here("results","figures","height-weight-stratified.png"))
+```
+
+## Full analysis
+
+*Use one or several suitable statistical/machine learning methods to analyze your data and to produce meaningful figures, tables, etc. This might again be code that is best placed in one or several separate R scripts that need to be well documented. You want the code to produce figures and data ready for display as tables, and save those. Then you load them here.*
+
+Example @tbl-resulttable2 shows a summary of a linear model fit.
+
+```{r}
+#| label: tbl-resulttable2
+#| tbl-cap: "Linear model fit table."
+#| echo: FALSE
+resulttable2 = readRDS(here("results","tables","resulttable2.rds"))
+knitr::kable(resulttable2)
+```
+
+{{< pagebreak >}}
+
+# Discussion
+
+## Summary and Interpretation
+
+*Summarize what you did, what you found and what it means.*
+
+## Strengths and Limitations
+
+*Discuss what you perceive as strengths and limitations of your analysis.*
+
+## Conclusions
+
+*What are the main take-home messages?*
+
+*Include citations in your Rmd file using bibtex, the list of references will automatically be placed at the end*
+
+This paper [@leek2015] discusses types of analyses.
+
+These papers [@mckay2020; @mckay2020a] are good examples of papers published using a fully reproducible setup similar to the one shown in this template.
+
+Note that this cited reference will show up at the end of the document, the reference formatting is determined by the CSL file specified in the YAML header. Many more style files for almost any journal [are available](https://www.zotero.org/styles). You also specify the location of your bibtex reference file in the YAML. You can call your reference file anything you like.
+
+{{< pagebreak >}}
+
+# References
