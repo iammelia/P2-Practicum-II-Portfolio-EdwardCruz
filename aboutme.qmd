@@ -24,6 +24,4 @@ I look forward to getting to know all of you and learning together on this excit
 
 ![](images/Eddie%20Profile-01.jpg){fig-align="center" width="148"}
 
-My coding background has only been via instructional environments with exposure to SQL, R, and Python.
-
-<https://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Scatterplot>
+My coding background has only been via instructional environments with exposure to SQL, R, and Python. <https://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Scatterplot>
